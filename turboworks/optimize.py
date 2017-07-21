@@ -419,7 +419,7 @@ class OptTask(FireTaskBase):
                 raise AttributeError("The optimization database must be specified explicitly (with host, port, and "
                                      "name), with Launchpad object (lpad), by setting _add_launchpad_and_fw_id to True "
                                      "in the fw_spec, or by defining LAUNCHPAD_LOC in fw_config.py for "
-                                     "LaunchPad.auto_load()")  # TODO: @ardunn - LAUNCHPAD_LOC is typically not set through fw_config.py (that requires modifying FWS source code), it's set through a config file: https://hackingmaterials.lbl.gov/fireworks/config_tutorial.html  - AJ
+                                     "LaunchPad.auto_load()")  # TODO: @ardunn - LAUNCHPAD_LOC is typically not set through fw_config.py (that requires modifying FWS source code), it's set through a config file: https://materialsproject.github.io/fireworks/config_tutorial.html  - AJ
 
         mongo = MongoClient(host, port)
         db = getattr(mongo, name)
